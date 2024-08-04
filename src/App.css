@@ -1,0 +1,26 @@
+/* Basic layout styles for responsiveness */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .app-body {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
